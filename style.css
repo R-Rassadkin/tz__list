@@ -83,7 +83,7 @@ ul li {
 
 @media (max-width: 410px) {
   .mobile__link--more {
-    margin-left: 10px;
+    margin-left: 0;
   }
 }
 
@@ -116,6 +116,7 @@ ul li {
 .mobile__type {
   font-weight: 600;
   color: #4c85b8;
+  margin-right: 5px;
 }
 
 .mobile__box {

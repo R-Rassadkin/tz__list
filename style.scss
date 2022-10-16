@@ -63,7 +63,7 @@ ul li{
             margin-left: 30px;
             margin-bottom: 15px;
             @media (max-width:410px){
-                margin-left: 10px;
+                margin-left:0
             }
         }
     }
@@ -91,6 +91,7 @@ ul li{
     &__type{
         font-weight: 600;
             color: rgb(76, 133, 184);
+            margin-right: 5px;
     }
 
     &__box{
