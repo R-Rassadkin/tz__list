@@ -1,168 +1,171 @@
-p {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul li {
-  list-style-type: none;
-}
-
-.wrapper {
-  padding: 0 15px 0 15px;
-  margin: 0 auto;
-}
-
-@media (max-width: 410px) {
-  .mobile__status {
-    font-size: 14px;
+/* Start:/local/templates/dealers/css/styles.css?166331692012067*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('./fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('./fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('./fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
   }
-}
-
-.mobile__list {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.mobile__item {
-  border-bottom: 2px solid #9f9c9c;
-  padding-top: 10px;
-}
-
-.mobile__item-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 15px;
-}
-
-.mobile__item-line-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 410px) {
-  .mobile__order {
-    font-size: 14px;
+  
+  body {
+      font-family: Calibri, Sans-serif;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
   }
-}
-
-.mobile__link {
-  color: black;
-  font-weight: 600;
-}
-
-@media (max-width: 410px) {
-  .mobile__link {
-    font-size: 12px;
+  
+  ul {
+      -webkit-padding-start: 0px;
   }
-}
-
-.mobile__link--more {
-  font-weight: 600;
-  color: #4c85b8;
-  margin-left: 30px;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 410px) {
-  .mobile__link--more {
-    margin-left: 0;
+  
+  li {
+      list-style-type: none;
   }
-}
-
-.mobile__payment {
-  padding: 5px 20px 5px 20px;
-  border: 2px solid #55a6ee;
-  border-radius: 10px;
-  font-weight: 600;
-  color: #55a6ee;
-}
-
-@media (max-width: 410px) {
-  .mobile__payment {
-    padding: 3px 5px 3px 5px;
-    font-size: 14px;
+  
+  p {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
   }
-}
+  
+  
+  /* //////////////////////////MOBILE////////////////////// */
+ 
+  .mobile .history_links li{
+    position: relative;
+    min-height: 120px;
+    max-width: 500px;
+    border-bottom: 1px solid gray;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    }
 
-.mobile__data {
-  white-space: nowrap;
-  margin-right: 10px;
-}
-
-@media (max-width: 410px) {
-  .mobile__data {
-    font-size: 14px;
+  @media(max-width:350px){
+    .mobile .history_links li{
+        width: 300px;
+        margin-left: 10%;
+    }
   }
-}
-
-.mobile__type {
-  font-weight: 600;
-  color: #4c85b8;
-  margin-right: 5px;
-}
-
-.mobile__box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-@media (max-width: 320px) {
-  .mobile__box {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  
+  .mobile .history_links li p a{
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    top: 0;
   }
-}
-
-.mobile__summa {
-  font-weight: 900;
-  white-space: nowrap;
-}
-
-@media (max-width: 300px) {
-  .mobile__summa {
-    font-size: 12px;
+  .mobile .history_links li p a::before{
+    content: "заказ №";
   }
-}
 
-@media (max-width: 410px) {
-  .mobile__type {
-    font-size: 14px;
+  .mobile .history_links li .summa{
+   position: relative;
+   left: 200px;
+   top: 80px; 
+   font-weight: 900;
   }
-}
-
-.mobile__subtitle {
-  font-size: 12px;
-  color: gray;
-  margin-bottom: 15px;
-  margin-right: 5px;
-}
-
-@media (max-width: 410px) {
-  .mobile__subtitle {
-    font-size: 10px;
+  .mobile .history_links li .summa::after{
+    content: "Стоимость заказа";
+    font-weight: 100;
+    color: rgb(142, 142, 142);
+    font-size: 9px;
+    display: block;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  @media(max-width: 465px){
+    .mobile .history_links li .summa{
+        left: 130px;
+    }
+  }
+
+  .mobile .history_links li .payment{
+    position: absolute;
+    top: 0px;
+    left: 285px;
+    border: 2px solid rgb(72, 72, 232);
+    color: rgb(72, 72, 232);
+    background-color: rgb(237, 237, 255);
+    border-radius: 10px;
+    padding: 2px 25px;
+    font-weight: 900;
+  }
+  @media(max-width: 360px){
+    .mobile .history_links li .payment{
+        font-size: 14px;
+        left: 200px;
+    }
+  }
+  @media(max-width: 465px){
+    .mobile .history_links li .payment{
+        font-size: 12px;
+        left: 180px;
+    }
+  }
+
+  .mobile .history_links li .type{
+    color: rgb(72, 72, 232);
+    font-weight: 900;
+    text-align: start;
+    position: absolute;
+    top: 80px;
+   }
+  .mobile .history_links li .type::after{
+    content: "Тип заказа";
+    font-weight: 100;
+    color: rgb(142, 142, 142);
+    font-size: 9px;
+    display: block;
+ }
+
+  .mobile .history_links li .date_creation{
+    text-align: start;
+    position: absolute;
+    top: 35px;
+ }
+  .mobile .history_links li .date_creation::after{
+    content: "Дата создания заказа";
+    font-weight: 100;
+    color: rgb(142, 142, 142);
+    font-size: 9px;
+    text-align: start;
+    display: block;
+   }
+
+   .history_links  li .status {
+    text-align: start;
+    flex: 0 0 20%;
+    position: absolute;
+    left: 200px;
+    top: 35px;
+    white-space: nowrap;
+    }
+    .mobile .history_links li .status::after{
+        content: "Статус заказа";
+        font-weight: 100;
+        color: rgb(142, 142, 142);
+        font-size: 9px;
+        display: block;
+    }
+    @media(max-width: 465px){
+        .mobile .history_links li .status{
+            font-size: 14px;
+            left: 130px;
+        }
+    }
+    
+  
+
+  
+  
+  @media print {
+      /* ����� ����� ����� ��� ������ */
+      #panel, .header, .control_buttons, .menu_area  {
+          display: none!important;
+      }
+  }
+  /* End */
+  
+  
+  /* Start:/local/templates/dealers/components/bitrix/menu/dealers_menu/style.min.css?1649767452490*/
+  ul.left-menu{list-style:none;margin:0;padding:0;margin-bottom:8px;position:relative}ul.left-menu li{padding:10px 16px;background:#f5f5f5 url(/local/templates/dealers/components/bitrix/menu/dealers_menu/images/left_menu_bg.gif) top repeat-x}ul.left-menu li a{font-size:100%;color:#bc262c;font-weight:bold;text-decoration:none}ul.left-menu li a:visited{color:#bc262c}ul.left-menu li a:hover{color:#bc262c}ul.left-menu li a.selected:link,ul.left-menu li a.selected:visited,ul.left-menu li a.selected:active,ul.left-menu li a.selected:hover{color:#fc8d3d}
+  /* End */
+  /* /local/templates/dealers/css/styles.css?166331692012067 */
+  /* /local/templates/dealers/components/bitrix/menu/dealers_menu/style.min.css?1649767452490 */
+  
